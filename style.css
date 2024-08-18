@@ -12,3 +12,8 @@
 {
     width: 300px;
 }
+
+.contacto p
+{
+    display: inline-block;
+}
