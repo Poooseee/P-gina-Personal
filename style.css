@@ -8,9 +8,53 @@
     width: 50px;
 }
 
+.inicio
+{
+    display: flex;
+}
+
+.nombre
+{
+    padding-top: 10%;
+}
+
 .foto_mia
 {
     width: 300px;
+}
+
+.formacion   
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+h2
+{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.formacion div
+{
+    margin: 2%;
+    width: 33%;
+    border: 2px solid green;
+}
+
+.formacion img
+{
+    width: 95%;
+    height: 300px;
+    margin: 3%;
+}
+
+.formacion p
+{
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
 }
 
 .contacto p
