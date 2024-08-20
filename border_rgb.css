@@ -1,0 +1,86 @@
+@property --angle
+{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.instituciones::after, .instituciones::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 0.2em;
+    border-radius: 1.5em;
+    animation: 3s spin linear infinite;
+}
+
+.instituciones::before
+{
+    filter: blur(1rem);
+    opacity: 0.5;
+}
+
+.proyectos_divs::after, .proyectos_divs::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    animation: 3s spin linear infinite;
+}
+
+.proyectos_divs::before
+{
+    filter: blur(1rem);
+    opacity: 0.5;
+}
+
+.contacto::after, .contacto::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    animation: 3s spin linear infinite;
+}
+
+.contacto::before
+{
+    filter: blur(1rem);
+    opacity: 0.5;
+}
+
+@keyframes spin
+{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+

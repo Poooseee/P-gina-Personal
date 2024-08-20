@@ -8,6 +8,21 @@ body
     position: relative;
     z-index: -10;
     padding: 24px 5px;
+    color: white;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a
+{
+    margin: auto 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
 .foto_nav
@@ -18,49 +33,61 @@ body
 .inicio
 {
     display: flex;
+    width: 90%;
+    margin: 10% auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .nombre
 {
     display: block;
-    height: auto;
     font-family: monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 12ch;
-    animation: typing 2s steps(12),
-    blink .5s infinite step-end alternate;
-    overflow: hidden;
+    width: 50%;
+    margin: auto 5%;
 }
 
-@keyframes typing
+h1
 {
-    from{width: 0;}
+    font-size: 8em;
+    margin: 0;
 }
 
-@keyframes blink
+.nombre p
 {
-    50% {border-color: transparent;}
+    font-size: 1.3em;
 }
 
 .foto_mia
 {
-    width: 300px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
 }
 
 .proyectos
 {
     width: 90%;
-    margin: auto;
+    margin: 5% auto;
     display: block;
 }
 
-.proyectos div
+.proyectos_divs
 {
     display: flex;
-    margin-top: 2%;
     height: 100%;
-    border: 2px solid green;
+    border-radius: 0.5em;
+    position: relative;
+    background-color: #221f2f;
+    margin: 7% 0;
+    width: 80%;
+}
+
+#proyecto_izq
+{
+    left: 20%;
 }
 
 .proyectos .burger_code img
@@ -106,12 +133,14 @@ body
     width: 5%;
 }
 
+
 .formacion   
 {
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 5% auto;
     display: flex;
     justify-content: space-between;
+    border: none;
 }
 h2
 {
@@ -123,43 +152,90 @@ h2
 {
     margin: 2%;
     width: 33%;
-    border: 2px solid green;
+    border: none;
+    position: relative;
+    background-color: #221f2f;
+    border-radius: 1.5em;
+}
+
+.formacion .formacion_img
+{
+    display: flex;
+    width: 95%;
+    border: none;
+    margin: 2% auto;
 }
 
 .formacion img
 {
     width: 95%;
-    height: 300px;
+    height: 25em;
     margin: 3%;
+    background-color: whitesmoke;
 }
 
 .formacion p
 {
     width: 100%;
     text-align: center;
-    margin: 5% 0;
+    margin: 8% 0;
+    font-size: 1.3em;
+    line-height: 2em;
 }
 
-.contacto
-{
-    width: 80%;
+.contacto {
+    width: 90%;
     display: flex;
     margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #221f2f;
+    border-radius: 0.5em;
 }
 
-.contacto .contacto_img
-{
-    margin-left: 50%;
+.contacto .contacto_img {
+    display: flex;
     width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0; /* Asegúrate de que no haya margen adicional que desplace la imagen */
 }
 
-.contacto .contacto_img img
-{
-    width: 100%;
+.contacto .contacto_img img {
+    max-width: 70%;
+    height: auto;
+    display: block;
 }
 
-.contacto_txt
-{
+.contacto_txt {
     display: inline-block;
-    margin-top: 10%;
+    margin: auto 5%;
+    width: 30%;
+    border: none;
+}
+
+.contacto_txt a
+{
+    text-decoration: none;
+}
+
+.contacto_txt div
+{
+    background-color: whitesmoke;
+    border: none;
+    display: flex;
+    padding: 2% 0;
+}
+
+.contacto_txt img
+{
+    margin: auto 3%;
+}
+
+.contacto_txt span
+{
+    margin: auto 2%;
+    font-size: 1.3em;
+    color: black;
 }

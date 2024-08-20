@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="border_rgb.css">
     <title>Agustin Pose</title>
 </head>
 <body>
     <nav>
-        <img class="foto_nav" src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Foto Nav">
+        <a href=""><img class="foto_nav" src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Foto Nav"></a>
         <a href="">Inicio</a>
         <a href="">Habilidades</a>
         <a href="">Proyectos</a>
         <a href="">Formación</a>
         <a href="">Contacto</a>
     </nav>
-    <h1 class="nombre">AGUSTIN POSE</h1>
     <div class="inicio">
-        <img class="foto_mia" src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Foto Mía">
+        <div class="nombre">
+            <h1>AGUSTIN POSE</h1>
+            <p>Soy un Programador Junior y estudiante universitario de Programación y Sistemas Informáticos. Poseo un año de experiencia en Desarrollo Web y en 
+               Desarrollo de Software con lenguajes como C++ o C#. Además estoy muy familiarizado con el motor gráfico de Unity y me apasiona el desarrollo de videojuegos.
+               Mi meta es integrarme en un equipo activo en el que pueda aportar y adquirir conocimientos de profesionales con experiencia. Estoy motivado por la idea de 
+               trabajar en proyectos que me permitan aplicar y desarrollar aún más mis habilidades.
+            </p>
+        </div>
+        <div class="foto_mia">
+            <img class="foto_mia" src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Foto Mía">
+        </div>
     </div>
     <h2>HABILIDADES</h2>
     <div class="slider">
@@ -43,11 +53,12 @@
             <div class="item_2" style="--position: 3"><img src="imgs/slider_programas/logo_unity.png" alt="Logo Unity"></div>
             <div class="item_2" style="--position: 4"><img src="imgs/slider_programas/logo_visual.png" alt="Logo Visual Studio"></div>
             <div class="item_2" style="--position: 5"><img src="imgs/slider_programas/logo_visualcode.png" alt="Logo Visual Studio Code"></div>
+            <div class="item_2" style="--position: 6"><img src="imgs/slider_programas/logo_github.png" alt="Logo GitHub"></div>
         </div>
     </div>
     <h2>PROYECTOS</h2>
     <div class="proyectos">
-        <div class="chained">
+        <div class="proyectos_divs">
             <img src="imgs/proyectos/chained_dungeon.png" alt="The Chained Dungeon">
             <div class="proyectos_txt">
                 <h3>The Chained Dungeon</h3>
@@ -60,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="burger_code">
+        <div class="proyectos_divs" id="proyecto_izq">
             <div class="proyectos_txt">
                 <h3>CodeFlix</h3>
                 <p>Página confeccionada a modo de proyecto final para mi certificación de Web Developer
@@ -75,7 +86,7 @@
             </div>
             <img src="imgs/proyectos/burger_code.png" alt="Burger Code">
         </div>
-        <div class="code_flix">
+        <div class="proyectos_divs">
             <img src="imgs/proyectos/code_flix.png" alt="CodeFlix">
             <div class="proyectos_txt">
                 <h3>Burger::Code</h3>
@@ -97,18 +108,24 @@
     <h2>FORMACIÓN</h2>
     <div class="formacion">
         
-        <div class="utn">
-            <img src="imgs/formacion/logo_utn.png" alt="Logo UTN">
-            <p>Carrera Universitaria: Tecnicatura Universitaria en Programación. <br> 
+        <div class="instituciones">
+            <div class="formacion_img">
+                <img src="imgs/formacion/logo_utn.png" alt="Logo UTN">
+            </div>
+            <p>Carrera: Tecnicatura Universitaria en Programación. <br> 
                Estado: 55%.</p>
         </div>
-        <div class="aprende">
-            <img src="imgs/formacion/logo_aprende.png" alt="Logo Aprendé">
+        <div class="instituciones">
+            <div class="formacion_img">
+                <img src="imgs/formacion/logo_aprende.png" alt="Logo Aprendé">
+            </div>
             <p>Curso: Desarrollo de videojuegos con Unity <br>
                Estado: Terminado.</p>
         </div>
-        <div class="codoacodo">
-            <img src="imgs/formacion/logo_codoacodo.png" alt="Logo Codo a Codo">
+        <div class="instituciones">
+            <div class="formacion_img">
+                <img src="imgs/formacion/logo_codoacodo.png" alt="Logo Codo a Codo">
+            </div>
             <p>Curso: FullStack Desarrollo Web (JavaScript/Node.JS)<br>
                 Estado: Terminado.</p>
         </div>
@@ -116,16 +133,36 @@
     <h2>CONTACTO</h2>
     <div class="contacto">
         <div class="contacto_txt">
-            <img src="imgs/redes/logo_wsp.png" alt="Logo Telefono">
-            <a href="https://wa.me/+541158900331">+54-11-5890-0331</a><br>
-            <img src="imgs/redes/logo_mail.png" alt="Logo Mail">
-            <a href="mailto:agusposeuala@gmail.com">agusposeuala@gmail.com</a><br>
-            <img src="imgs/redes/logo_linkedin.png" alt="Logo LinkedIn">
-            <a href="https://www.linkedin.com/in/agustin-pose/">LinkedIn</a><br>
-            <img src="imgs/redes/logo_github.png" alt="Logo GitHub">
-            <a href="https://github.com/Poooseee">GitHub</a><br>
-            <img src="imgs/redes/logo_linktr.png" alt="Logo Linktr">
-            <a href="https://linktr.ee/AgustinPose">Linktr</a>
+            <a href="https://wa.me/+541158900331">
+                <div>
+                    <img src="imgs/redes/logo_wsp.png" alt="Logo Telefono">
+                    <span>Chatear conmigo</span>
+                </div>
+            </a><br>
+            <a href="mailto:agusposeuala@gmail.com">
+                <div>
+                    <img src="imgs/redes/logo_mail.png" alt="Logo Mail">
+                    <span>agusposeuala@gmail.com</span>
+                </div>
+            </a><br>
+            <a href="https://www.linkedin.com/in/agustin-pose/">
+                <div>
+                    <img src="imgs/redes/logo_linkedin.png" alt="Logo LinkedIn">
+                    <span>LinkedIn: Agustin Pose</span>
+                </div>
+            </a><br>
+            <a href="https://github.com/Poooseee">
+                <div>
+                    <img src="imgs/redes/logo_github.png" alt="Logo GitHub">
+                    <span>GitHub: Poooseee</span>
+                </div>
+            </a><br>
+            <a href="https://linktr.ee/AgustinPose">
+                <div>
+                    <img src="imgs/redes/logo_linktr.png" alt="Logo Linktr">
+                    <span>Linktr</span>
+                </div>
+            </a>
         </div>
         <div class="contacto_img">
             <img src="imgs/contacto/contacto.png" alt="Contacto">

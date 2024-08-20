@@ -1,8 +1,8 @@
 .slider
 {
-    width: 70%;
+    width: 90%;
     height: 75px;
-    margin: 2% auto;
+    margin: 10% auto;
     overflow: hidden;
     border: 2px solid red;
     mask-image: linear-gradient(
@@ -40,7 +40,7 @@
     left: 100%;
     animation: autoRun 10s linear infinite;
     transition: filter 0.5s;
-    animation-delay: calc((10s / 5) * (var(--position) - 1))!important;
+    animation-delay: calc((10s / 6) * (var(--position) - 1))!important;
 }
 
 .slider .list .item img
