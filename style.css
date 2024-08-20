@@ -1,6 +1,13 @@
-*
+body
 {
+    background: radial-gradient(60% 60% at 50% 10%, #221f2f 10%, rgb(13, 13, 13) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
     margin: 0;
+    position: relative;
+    z-index: -10;
+    padding: 24px 5px;
 }
 
 .foto_nav
@@ -41,6 +48,64 @@
     width: 300px;
 }
 
+.proyectos
+{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.proyectos div
+{
+    display: flex;
+    margin-top: 2%;
+    height: 100%;
+    border: 2px solid green;
+}
+
+.proyectos .burger_code img
+{
+    margin-left: 3%;
+    margin-right: 0;
+}
+
+.proyectos img
+{
+    width: 50%;
+    margin-right: 3%;
+}
+
+.proyectos h3
+{
+    text-align: center;
+    margin: 2% 0;
+}
+
+.proyectos .burger_code .proyectos_txt 
+{
+    margin-right: 0;
+    margin-left: 3%;
+}
+
+.proyectos .proyectos_txt
+{
+    display: block;
+    width: 100%;
+    margin-right: 3%;
+}
+
+.proyectos .proyectos_tec 
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.proyectos .proyectos_tec img
+{
+    width: 5%;
+}
+
 .formacion   
 {
     width: 80%;
@@ -75,7 +140,26 @@ h2
     margin: 5% 0;
 }
 
-.contacto p
+.contacto
+{
+    width: 80%;
+    display: flex;
+    margin: 5% auto;
+}
+
+.contacto .contacto_img
+{
+    margin-left: 50%;
+    width: 70%;
+}
+
+.contacto .contacto_img img
+{
+    width: 100%;
+}
+
+.contacto_txt
 {
     display: inline-block;
+    margin-top: 10%;
 }
