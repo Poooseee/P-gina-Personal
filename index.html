@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="border_rgb.css">
+    <!--FUENTE TITULOS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--FUENTE TEXTOS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Agustin Pose</title>
 </head>
 <body>
@@ -19,8 +27,9 @@
     </nav>
     <div class="inicio">
         <div class="nombre">
-            <h1>AGUSTIN POSE</h1>
-            <p>Soy un Programador Junior y estudiante universitario de Programación y Sistemas Informáticos. Poseo un año de experiencia en Desarrollo Web y en 
+            <h1 class="texto-brillante-animado">AGUSTIN POSE</h1>
+            <h2>Programador Junior</h2>
+            <p>Soy un estudiante universitario de Programación y Sistemas Informáticos. Poseo un año de experiencia en Desarrollo Web y en 
                Desarrollo de Software con lenguajes como C++ o C#. Además estoy muy familiarizado con el motor gráfico de Unity y me apasiona el desarrollo de videojuegos.
                Mi meta es integrarme en un equipo activo en el que pueda aportar y adquirir conocimientos de profesionales con experiencia. Estoy motivado por la idea de 
                trabajar en proyectos que me permitan aplicar y desarrollar aún más mis habilidades.
@@ -56,7 +65,7 @@
             <div class="item_2" style="--position: 6"><img src="imgs/slider_programas/logo_github.png" alt="Logo GitHub"></div>
         </div>
     </div>
-    <h2>PROYECTOS</h2>
+    <h2 id="titulo_proyectos">PROYECTOS</h2>
     <div class="proyectos">
         <div class="proyectos_divs">
             <img src="imgs/proyectos/chained_dungeon.png" alt="The Chained Dungeon">
@@ -64,7 +73,7 @@
                 <h3>The Chained Dungeon</h3>
                 <p>Juego de aventuras inspirado en mazmorras. Desarrollado como proyecto integrador universitario. 
                    Cuenta con distintos tipos de enemigos (normales, mini jefes y jefes finales), items y niveles basados en XP.</p>
-                <div class="proyectos_tec">
+                <div class="proyectos_tec" id="chained_dungeon">
                     <p>Tecnologías:</p>
                     <img src="imgs/slider_lenguajes/C++.png" alt="Logo C++">
                     <img src="imgs/slider_lenguajes/SFML.png" alt="Logo SFML">
@@ -73,10 +82,10 @@
         </div>
         <div class="proyectos_divs" id="proyecto_izq">
             <div class="proyectos_txt">
-                <h3>CodeFlix</h3>
+                <h3>Burger::Code</h3>
                 <p>Página confeccionada a modo de proyecto final para mi certificación de Web Developer
                    Mediante el consumo de una API se crea una biblioteca de películas. Cuenta con sistema de inicio de sesión, comentarios y una conexión a base de datos.</p>
-                <div class="proyectos_tec">
+                <div class="proyectos_tec" id="burger_code">
                     <p>Tecnologías:</p>
                     <img src="imgs/slider_lenguajes/logo_html.png" alt="Logo HTML">
                     <img src="imgs/slider_lenguajes/logo_css.png" alt="Logo CSS">
@@ -89,10 +98,10 @@
         <div class="proyectos_divs">
             <img src="imgs/proyectos/code_flix.png" alt="CodeFlix">
             <div class="proyectos_txt">
-                <h3>Burger::Code</h3>
+                <h3>CodeFlix</h3>
                 <p>Prioriza el diseño y el impacto visual. Simula un sitio web de una hamburguesería. Permite la navegación en el menú, la visualización de las sucursales 
                    y un formulario para postularte al trabajo</p>
-                <div class="proyectos_tec">
+                <div class="proyectos_tec" id="code_flix">
                     <p>Tecnologías:</p>
                     <img src="imgs/slider_lenguajes/logo_html.png" alt="Logo HTML">
                     <img src="imgs/slider_lenguajes/logo_css.png" alt="Logo CSS">

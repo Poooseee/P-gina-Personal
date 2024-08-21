@@ -5,6 +5,28 @@
     inherits: false;
 }
 
+.list::after, .list::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 0.2em;
+    animation: 3s spin linear infinite;
+}
+
+.list::before
+{
+    filter: blur(1rem);
+    opacity: 0.5;
+}
+
 .instituciones::after, .instituciones::before
 {
     content: '';
