@@ -157,7 +157,7 @@ nav a
 .proyectos
 {
     width: 90%;
-    margin: 5% auto 8% auto;
+    margin: 5% auto 16% auto;
     display: block;
 }
 
@@ -259,8 +259,8 @@ nav a
 
 .formacion   
 {
-    width: 90%;
-    margin: 3% auto 5% auto;
+    width: 95%;
+    margin: 3% auto 10% auto;
     display: flex;
     justify-content: space-between;
     border: none;
@@ -295,9 +295,15 @@ nav a
 {
     width: 100%;
     text-align: center;
-    margin: 8% 0 10% 0;
+    margin: 8% auto 10% auto;
     font-size: 1.3em;
     line-height: 2em;
+}
+
+.formacion h2
+{
+    margin: 0;
+    padding: 0;
 }
 
 .contacto {
