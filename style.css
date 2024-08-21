@@ -5,9 +5,9 @@ body
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+    padding: 0;
     position: relative;
     z-index: -10;
-    padding: 24px 5px;
     color: white;
     font-family: "Exo 2", sans-serif;
 }
@@ -82,14 +82,25 @@ h1
 
 h2
 {
-    margin-top: 10%;
     text-align: center;
 }
 
-nav
-{
+nav {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    transition: background-color 0.3s ease;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background-color: transparent; /* Fondo transparente por defecto */
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: #221f2f; /* Color de fondo cuando se desplaza más allá de 100vh */
 }
 
 nav a
@@ -109,7 +120,7 @@ nav a
 {
     display: flex;
     width: 90%;
-    margin: 10% auto 20% auto;
+    margin: 15% auto 20% auto;
     justify-content: center;
     align-items: center;
 }
@@ -146,7 +157,7 @@ nav a
 .proyectos
 {
     width: 90%;
-    margin: 5% auto;
+    margin: 5% auto 8% auto;
     display: block;
 }
 
@@ -249,7 +260,7 @@ nav a
 .formacion   
 {
     width: 90%;
-    margin: 5% auto;
+    margin: 3% auto 5% auto;
     display: flex;
     justify-content: space-between;
     border: none;
@@ -284,7 +295,7 @@ nav a
 {
     width: 100%;
     text-align: center;
-    margin: 8% 0 12% 0;
+    margin: 8% 0 10% 0;
     font-size: 1.3em;
     line-height: 2em;
 }
@@ -298,6 +309,7 @@ nav a
     position: relative;
     background-color: #221f2f;
     border-radius: 0.5em;
+    margin-bottom: 5em;
 }
 
 .contacto .contacto_img {
