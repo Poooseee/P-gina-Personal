@@ -3,7 +3,6 @@ body
     background: radial-gradient(60% 60% at 50% 10%, #221f2f 10%, rgb(13, 13, 13) 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
     margin: 0;
     padding: 0;
     position: relative;
@@ -196,7 +195,7 @@ nav a
 
 .proyectos p
 {
-    margin-bottom: 10%;
+    margin: 10% auto 0 auto;
     font-size: 1.2em;
     text-align: left;
     width: 80%;
@@ -238,17 +237,17 @@ nav a
 
 #chained_dungeon
 {
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 #burger_code
 {
-    margin-top: 18%;
+    margin-top: 16%;
 }
 
 #code_flix
 {
-    margin-top: 21%;
+    margin-top: 19%;
 }
 
 .proyectos .proyectos_tec img
@@ -306,7 +305,7 @@ nav a
     padding: 0;
 }
 
-.contacto {
+.contacto{
     width: 90%;
     display: flex;
     margin: 5% auto;
@@ -315,7 +314,6 @@ nav a
     position: relative;
     background-color: #221f2f;
     border-radius: 0.5em;
-    margin-bottom: 5em;
 }
 
 .contacto .contacto_img {
@@ -330,6 +328,12 @@ nav a
     max-width: 70%;
     height: auto;
     display: block;
+    
+}
+
+.btn_contacto img
+{
+    filter: invert(90%);
 }
 
 .contacto_txt {
@@ -346,10 +350,10 @@ nav a
 
 .contacto_txt div
 {
-    background-color: whitesmoke;
-    border: none;
     display: flex;
-    padding: 2% 0;
+    padding: 2% 5%;
+    border-radius: 5em;
+    margin: 3% auto;
 }
 
 .contacto_txt img
@@ -361,5 +365,10 @@ nav a
 {
     margin: auto 2%;
     font-size: 1.3em;
-    color: black;
+    color: whitesmoke;
+}
+
+#linktr
+{
+    border-radius: 5em;
 }
