@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         const target = document.querySelector(this.getAttribute('href'));
         const navbarHeight = document.querySelector('header').offsetHeight;
-        const offsetTop = target.offsetTop - navbarHeight + 120; // Ajuste adicional de 50px
+        const offsetTop = target.offsetTop - navbarHeight; // Ajuste adicional de 50px
 
         window.scrollTo({
             top: offsetTop,

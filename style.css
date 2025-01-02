@@ -152,13 +152,13 @@ nav a
 
 #titulo_proyectos
 {
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .proyectos
 {
     width: 90%;
-    margin: 5% auto 16% auto;
+    margin: 5% auto 16% auto;   
     display: block;
 }
 
@@ -378,4 +378,9 @@ nav a
 #linktr
 {
     border-radius: 5em;
+}
+
+span
+{
+    margin-top:
 }
