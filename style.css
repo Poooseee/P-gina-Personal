@@ -131,6 +131,7 @@ nav a
     display: block;
     font-family: monospace;
     width: 50%;
+    height: 35em;
     margin: auto 5%;
 }
 
@@ -139,6 +140,25 @@ nav a
 {
     font-size: 1.3em;
     width: 90%;
+    margin-bottom: 3.5%;
+}
+
+.cv
+{
+    font-size: 1.6em;
+    border: white 0.1em solid;
+    border-radius: 6%;
+    padding: 1%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.08em;
+}
+
+.cv:hover
+{
+    color: black;
+    background-color: whitesmoke;
 }
 
 .foto_mia
