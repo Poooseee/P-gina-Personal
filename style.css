@@ -170,6 +170,11 @@ nav a
     margin-right: 1%;
 }
 
+.foto_mia img
+{
+    filter: invert(100%);
+}
+
 #titulo_proyectos
 {
     margin-top: 5%;
